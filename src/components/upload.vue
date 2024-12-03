@@ -4,7 +4,7 @@
     :on-preview="handlePictureCardPreview" :on-remove="handleRemove" :on-change="onChange">
     <div class="">
       <img v-if="spectDemo" src="/src/assets/cardIcon.svg" alt="" class="card-icon">
-      <img v-if="spectStore" :src="uploadText != '上传营业执照' ? '/src/assets/store.svg' : '/src/assets/card.svg'" alt="" class="card-business-icon">
+      <img v-if="spectStore" :src="uploadText != '上传营业执照' ? storeImg : cardImg" alt="" class="card-business-icon">
       <div class="card-text">{{ uploadText }}</div>
     </div>
   </el-upload>
@@ -15,6 +15,8 @@
 </template>
 
 <script setup>
+import storeImg from "/@/assets/store.svg";
+import cardImg from "/@/assets/card.svg";
 const props = defineProps({
   uploadText: {
     type: String,

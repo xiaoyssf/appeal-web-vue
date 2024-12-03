@@ -35,16 +35,14 @@ li {
 	color: #4E5152 !important;
 }
 
-.el-form-item{
-  .el-input__wrapper{
-    width: 250px !important;
-  }
-	.el-input__inner{
-		color: #1D1F20 !important;
-	}
-	.el-select__selected-item{
-		color: #1D1F20;
-	}
+.el-input__wrapper{
+  width: 250px !important;
+}
+.el-input__inner{
+  color: #1D1F20 !important;
+}
+.el-select__selected-item{
+  color: #1D1F20;
 }
 
 .el-date-editor.el-input{

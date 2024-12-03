@@ -2,7 +2,7 @@
     <div class="content" v-loading="loading">
         <header class="header-title">商户解冻资金申诉材料</header>
         <el-scrollbar class="scrow">
-            <el-form style="width: 100%;" :model="form" label-width="130">
+            <el-form style="width: 100%;" :model="form" label-width="160">
                 <el-row>
                     <el-col :span="12">
                         <el-form-item label="商户名">
@@ -156,7 +156,7 @@ const state = reactive({
 })
 
 const loading = ref(false)
-const dialogVisible = ref('')
+const dialogVisible = ref(false)
 const onSubmit = () => {
     console.log('submit!')
     loading.value = true

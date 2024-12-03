@@ -36,24 +36,17 @@ li {
 }
 
 .el-form-item{
+  .el-input__wrapper{
+    width: 250px !important;
+  }
 	.el-input__inner{
-    width: 100% !important;
 		color: #1D1F20 !important;
 	}
 	.el-select__selected-item{
-    width: 100% !important;
 		color: #1D1F20;
 	}
 }
 
 .el-date-editor.el-input{
   width: 100% !important;
-}
-
-.el-upload--picture-card{
-  width: 400px !important;
-  height: 300px !important;
-  border: none !important;
-  background: #F9FAFB !important;
-  border: 2px dashed #D1D5DB !important;
 }

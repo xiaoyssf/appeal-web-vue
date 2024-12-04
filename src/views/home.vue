@@ -65,9 +65,12 @@
                         </el-form-item>
                     </el-col>
                     <el-col :span="12">
-                        <el-form-item label="支付时间">
-                            <el-date-picker v-model="form.date" type="date" placeholder="请选择支付时间" />
+                        <el-form-item label="冻结资金交易编码">
+                            <el-input v-model="form.ercode" placeholder="请输入冻结资金交易编码" />
                         </el-form-item>
+                        <!-- <el-form-item label="支付时间">
+                            <el-date-picker v-model="form.date" type="date" placeholder="请选择支付时间" />
+                        </el-form-item> -->
                     </el-col>
                 </el-row>
 
@@ -153,6 +156,7 @@ const state = reactive({
     businessFile: '', // 营业执照
     storeFile: '', // 店铺门头
     storeRoomFile: '', // 店铺内景
+    ercode:''
 })
 
 const loading = ref(false)
